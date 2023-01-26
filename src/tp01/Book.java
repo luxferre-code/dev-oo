@@ -1,28 +1,29 @@
-package tp01;
-
-public class Book {
-    
+class Book {
+    // class attributes
     String author;
     String title;
     int year;
 
+    
+    // constructor
     Book(String author, String title, int year) {
         this.author = author;
         this.title = title;
         this.year = year;
     }
 
+
+    // methods
     String getAuthor() {
-        return author;
+        return this.author;
     }
+
 
     String getTitle() {
-        return title;
+        return this.title;
     }
 
-    public static void main(String[] args) {
-        Book book = new Book("J. K. Rowling", "Harry Potter", 1997);
-        System.out.println(book.author + " a écrit " + book.title + " en " + book.year);
+    void affiche() {
+        System.out.println(this.author + " a écrit " + this.title + " en " + this.year);
     }
-
 }

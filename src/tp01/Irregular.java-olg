@@ -1,0 +1,100 @@
+import java.util.Random;
+
+public class Irregular {
+
+    int[] lineSize;
+    int[][] tableau;
+
+    int maxInLineSize() {
+        int max = 0;
+        for(int i=0; i<lineSize.length; i++) {
+            if(lineSize[i] > max) {
+                max = lineSize[i];
+            }
+        }
+        return max;
+    }
+ 
+    Irregular(int[] lineSize) {
+        this.lineSize = new int[lineSize.length];
+        for(int idx = 0; idx < lineSize.length; idx++) {
+            this.lineSize[idx] = lineSize[idx];
+        }
+        this.tableau = new int[lineSize.length][maxInLineSize()];
+    }
+
+    void randomFilling() {
+        Random r = new Random();
+        for(int i = 0; i < this.lineSize.length; i++) {
+            for(int j = 0; j < this.lineSize[i]; j++) {
+                this.tableau[i][j] = r.nextInt(100);
+            }
+        }
+    }
+
+    String display() {
+        String s = "";
+        for(int i=0; i< this.lineSize.length; i++) {
+            for(int j=0; j< this.lineSize[i]; j++) {
+                s += this.tableau[i][j] + "|";
+            }
+            s += "\n";
+        }
+        return s;
+    }
+
+    boolean isCommun(int element) {
+        /*
+         * Recherche si l'élément appartient à au minimun une ligne
+         * :return true si l'élément appartient à au minimun une ligne:
+         */
+        for(int i=0; i< this.lineSize.length; i++) {
+            for(int j=0; j< this.lineSize[i]; j++) {
+                if(this.tableau[i][j] == element) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    boolean inLine(int element, int line) {
+        /*
+         * Recherche si l'élément appartient à la ligne
+         * :return true si l'élément appartient à la ligne:
+         */
+        for(int i=0; i< this.lineSize[line]; i++) {
+            if(this.tableau[line][i] == element) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    boolean existCommon() {
+        /*
+         * Recherche si un élement est en commun dans toutes lignes
+         * :return true si un élément est en commun dans toutes les lignes:
+        */
+
+        int[] tab = new int[this.lineSize[0]];
+        for(int i=0; i< this.lineSize[0]; i++) {
+            tab[i] = this.tableau[0][i];
+        }
+
+        for(int i=0; i< tab.length; i++) {
+            boolean isCommon = true;
+            for(int j=1; j< this.lineSize.length; j++) {
+                if(!inLine(tab[i], j)) {
+                    isCommon = false;
+                }
+            }
+            if(isCommon) {
+                return true;
+            }
+        }
+        return false;
+
+    }
+
+}
