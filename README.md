@@ -1,18 +1,21 @@
-## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# dev-oo
 
-## Folder Structure
+🚀 Bienvenue sur mon dépôt Github "dev-oo" ! Ici, vous trouverez tous les TP d'orienté objet que j'ai réalisés.
 
-The workspace contains two folders by default, where:
+## Code source
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+📂 Le code se trouve dans le dossier src/tpXX (où XX est le numéro du TP). Les librairies utilisées sont stockées dans le dossier lib.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Auteur
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+👨‍💻 Auteur : Valentin Thuillier aka [LuxFerre](mailto:valentin.thuillier@luxferre-code.fr)
 
-## Dependency Management
+🌐 Site web : https://www.luxferre-code.fr/
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+💬 Discord : LuxFerre#7852
+
+##
+
+💻 Ce dépôt est a but éducatif, cela veut dire que ne faites pas des copier coller inutile. Il faut avant tous comprendre ce que j'ai fais. Si vous avez des questions, n'hésité pas à me les poser ou à les posez à vos profs de TD et TP.
+
