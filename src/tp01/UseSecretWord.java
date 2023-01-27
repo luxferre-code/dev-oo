@@ -1,3 +1,5 @@
+package tp01;
+
 import util.SecretWord;
 
 public class UseSecretWord {

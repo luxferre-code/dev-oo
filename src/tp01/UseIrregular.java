@@ -1,3 +1,5 @@
+package tp01;
+
 public class UseIrregular {
     
     public static void main(String[] args) {

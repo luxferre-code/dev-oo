@@ -1,3 +1,5 @@
+package tp01;
+
 class Book {
     // class attributes
     String author;
