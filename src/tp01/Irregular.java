@@ -35,17 +35,16 @@ public class Irregular {
 
     boolean isCommun(int element) {
         /*
-         * Recherche si l'élément appartient à au minimun une ligne
-         * :return true si l'élément appartient à au minimun une ligne:
+         * Recherche si l'élément appartient à toutes les lignes
+         * :return true si l'élément appartient à toutes les lignes:
          */
+
         for(int i=0; i< this.tableau.length; i++) {
-            for(int j=0; j< this.tableau[i].length; j++) {
-                if(this.tableau[i][j] == element) {
-                    return true;
-                }
+            if(!this.inLine(element, i)) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     boolean inLine(int element, int line) {

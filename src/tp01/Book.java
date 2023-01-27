@@ -28,4 +28,9 @@ class Book {
     void affiche() {
         System.out.println(this.author + " a écrit " + this.title + " en " + this.year);
     }
+
+    public String toString() {
+        return this.author + " a écrit " + this.title + " en " + this.year;
+    }
+
 }

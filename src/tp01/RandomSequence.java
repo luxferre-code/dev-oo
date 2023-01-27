@@ -17,19 +17,19 @@ public class RandomSequence {
     }
 
     int genereRandomInt() {
-        return r.nextInt(maxVal);
+        return this.r.nextInt(maxVal); // this pas obligatoire mais recommander
     }
 
     double genereRandomDouble() {
-        return r.nextDouble() * maxVal;
+        return this.r.nextDouble() * maxVal; // this pas obligatoire mais recommander
     }
 
     void genereSequence() {
-        for(int i=0; i<nbrEltGenerated; i++) {
+        for(int i = 0; i < this.nbrEltGenerated; i++) {
             if(isInteger) {
-                System.out.println(genereRandomInt());
+                System.out.println(this.genereRandomInt()); // this pas obligatoire mais recommander
             } else {
-                System.out.println(genereRandomDouble());
+                System.out.println(this.genereRandomDouble()); // this pas obligatoire mais recommander
             }
         }
     }
