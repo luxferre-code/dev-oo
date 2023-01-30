@@ -46,8 +46,8 @@ public class Card {
 
     public boolean isBefore(Card c) {
         if(c == null) return false;
-        if(this.compareRank(c) == -1) return false;
-        if(this.compareRank(c) == 1) return true;
+        if(this.compareRank(c) == -1) return true;
+        if(this.compareRank(c) == 1) return false;
         return this.compareColor(c) == 1;
     }
 
