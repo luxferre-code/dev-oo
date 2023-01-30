@@ -1,0 +1,64 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Card",
+            "request": "launch",
+            "mainClass": "td02.Card",
+            "projectName": "dev-oo_c59031ee",
+            "args": "10"
+        },
+        {
+            "type": "java",
+            "name": "Launch Parameter",
+            "request": "launch",
+            "mainClass": "tp01.Parameter",
+            "projectName": "dev-oo_c59031ee"
+        },
+        {
+            "type": "java",
+            "name": "Launch RandomSequence",
+            "request": "launch",
+            "mainClass": "tp01.RandomSequence",
+            "projectName": "dev-oo_c59031ee"
+        },
+        {
+            "type": "java",
+            "name": "Launch UseBook",
+            "request": "launch",
+            "mainClass": "tp01.UseBook",
+            "projectName": "dev-oo_c59031ee"
+        },
+        {
+            "type": "java",
+            "name": "Launch UseHW",
+            "request": "launch",
+            "mainClass": "tp01.UseHW",
+            "projectName": "dev-oo_c59031ee"
+        },
+        {
+            "type": "java",
+            "name": "Launch UseIrregular",
+            "request": "launch",
+            "mainClass": "tp01.UseIrregular",
+            "projectName": "dev-oo_c59031ee"
+        },
+        {
+            "type": "java",
+            "name": "Launch UseSecretWord",
+            "request": "launch",
+            "mainClass": "tp01.UseSecretWord",
+            "projectName": "dev-oo_c59031ee"
+        }
+    ]
+}
