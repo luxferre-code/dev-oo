@@ -66,23 +66,13 @@ public class Irregular {
          * :return true si un élément est en commun dans toutes les lignes:
         */
 
-        int[] tab = new int[this.tableau.length];
+        int[] tab = new int[this.tableau[0].length];
         for(int i=0; i< this.tableau[0].length; i++) {
             tab[i] = this.tableau[0][i];
         }
         
-
-        boolean isCommon = true;
-        for(int i=0; i< this.tableau.length; i++) {
-            for(int j=0; j< this.tableau[i].length; j++) {
-                if(!this.inLine(this.tableau[i][j], i)) {
-                    isCommon = false;
-                }
-            }
-            if(isCommon) {
-                return true;
-            }
-        }
-        return false;
+        int rang = 0;
+        while(rang < tab.length && !isCommun(tab[rang])) rang++;
+        return rang != tab.length;
     }
 }
