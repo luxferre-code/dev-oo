@@ -22,5 +22,9 @@ public class DicePlayer {
     public int getTotalValue() {
         return totalValue;
     }
+
+    public int getNbDiceRolls() {
+        return nbDiceRolls;
+    }
     
 }
