@@ -1,8 +1,8 @@
 public class Competitor {
 
-    String numberSign;
-    int time;
-    int score;
+    private String numberSign;
+    private int time;
+    private int score;
 
     Competitor(int numberSign, int score, int min, int sec) {
         this.numberSign = "No" + numberSign; 
@@ -38,8 +38,33 @@ public class Competitor {
                 Competitor c = new Competitor(concurrent[i][0], concurrent[i][1], concurrent[i][2], concurrent[i][3]);
                 System.out.println(c.display());
             }
+            else System.exit(1);
         }
 
+    }
+
+    public String getNumberSign() {
+        return this.numberSign;
+    }
+
+    public void setNumberSign(String numberSign) {
+        this.numberSign = numberSign;
+    }
+
+    public int getTime() {
+        return this.time;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
+
+    public int getScore() {
+        return this.score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 
 }
