@@ -1,8 +1,6 @@
-package tp02;
+import util.Keyboard;
 
-import tpOO.util.Keyboard;
-
-public class NDicePlayerGame {
+public class NDicePlayerGame { /* Note à moi même, pas OUBLIER CE PTN DE :. dans la compilation et dans l'execution !!!!!! */
 
     private DicePlayer[] tabPlayer;
     private final int MAX_TOTAL_VALUE = 50;
@@ -62,7 +60,7 @@ public class NDicePlayerGame {
     }
 
     public static void main(String[] args) {
-        NDicePlayerGame game = new NDicePlayerGame(util.Keyboard.readInt("Nombre de joueurs: "));
+        NDicePlayerGame game = new NDicePlayerGame(Keyboard.readInt("Nombre de joueurs: "));
         game.playGame();
         System.out.println("Gagnant(s):");
         for(DicePlayer player : game.winner()) {
